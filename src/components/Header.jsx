@@ -1,3 +1,9 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+
+library.add(fas);
+
 export default function Header() {
   return (
     <div className="header">
@@ -12,6 +18,10 @@ export default function Header() {
         </span>
         <span className="nav-item">
           <a>Your Profile</a>
+        </span>
+        <span className="dark-toggle">
+          <FontAwesomeIcon icon="fa-solid fa-moon" />
+          <FontAwesomeIcon icon="fa-solid fa-sun" />
         </span>
       </div>
     </div>

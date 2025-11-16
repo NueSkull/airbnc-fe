@@ -54,3 +54,26 @@
 .header-nav .nav-item:hover a::after {
   width: 100%;
 }
+
+.properties-listing {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.property-card {
+  border: 1px solid lightgrey;
+  padding: 5px;
+  border-radius: 5px;
+}
+.property-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.property-card .locationAndPrice {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
