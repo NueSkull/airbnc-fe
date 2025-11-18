@@ -14,7 +14,7 @@ export default function Header() {
       </div>
       <div className="header-nav">
         <span className="nav-item">
-          <a>Properties</a>
+          <a href="/">Properties</a>
         </span>
         <span className="nav-item">
           <a>Your Profile</a>
