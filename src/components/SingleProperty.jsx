@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
+import PropertyDetails from "./PropertyDetails";
 
 export default function SinglePropery() {
   const { prop_id } = useParams();
@@ -24,11 +25,7 @@ export default function SinglePropery() {
 
   return (
     <div className="property-listing">
-      {isLoading ? (
-        "Loading..."
-      ) : (
-        <div className="property-name">{property.property_name}</div>
-      )}
+      {isLoading ? "Loading..." : <PropertyDetails property={property} />}
     </div>
   );
 }

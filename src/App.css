@@ -77,3 +77,9 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+.host-avatar img {
+  max-width: 120px;
+  height: auto;
+  border-radius: 10px;
+}
