@@ -9,6 +9,9 @@ export default function PropertyCards({ property }) {
   return (
     <Link to={`/property/${property.property_id}`}>
       <div className="property-card">
+        <div className="property-image">
+          <img src={property.image} />
+        </div>
         <div className="prop-name">
           <FontAwesomeIcon icon="fa-solid fa-house" /> {property.property_name}
         </div>

@@ -28,3 +28,10 @@ export const fetchPropertyListings = async () => {
   } = await axios.get("https://airbnc-60wa.onrender.com/api/properties");
   return properties;
 };
+
+export const getUserDetails = async (user_id) => {
+  const {
+    data: { user },
+  } = await axios.get("https://airbnc-60wa.onrender.com/api/users/" + user_id);
+  return user;
+};

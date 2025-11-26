@@ -8,7 +8,7 @@ export default function PropertyDetails({ property }) {
   return (
     <>
       <div className="property-image">
-        <img src={property.host_avatar} />
+        <img src={property.images[0]} />
       </div>
       <div className="property-details">
         <div className="property-name">
