@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  margin-top: 80px;
 }
 
 :root {
@@ -78,8 +79,77 @@
   justify-content: space-between;
 }
 
-.host-avatar img {
-  max-width: 120px;
-  height: auto;
+.property-listing {
+  min-width: 100%;
+  border: 1px solid var(--airblue);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.host-details .host-avatar {
+  width: 100px;
+  overflow: hidden;
   border-radius: 10px;
+  margin: 10px;
+}
+.host-details .host-avatar img {
+  width: 100%;
+  height: auto;
+}
+
+.property-details .property-name {
+  font-size: 1.5rem;
+}
+.property-details .location {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.property-details .svg-inline--fa {
+  margin-right: 8px;
+}
+.property-image {
+  width: 60%;
+}
+.property-details {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px;
+}
+.host-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.property-details div {
+  margin-bottom: 10px;
+}
+.property-listing .property-image {
+  padding: 10px;
+}
+.property-listing .property-image img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.property-card .property-image {
+  width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.property-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.property-card {
+  color: white;
+}
+.property-card .svg-inline--fa,
+.property-details .svg-inline--fa {
+  color: rgb(190, 188, 188);
 }

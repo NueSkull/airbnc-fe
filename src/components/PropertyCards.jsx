@@ -1,13 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router";
 
 library.add(fas);
 
 export default function PropertyCards({ property }) {
   return (
-    <a href={`/property/${property.property_id}`}>
+    <Link to={`/property/${property.property_id}`}>
       <div className="property-card">
+        <div className="property-image">
+          <img src={property.image} />
+        </div>
         <div className="prop-name">
           <FontAwesomeIcon icon="fa-solid fa-house" /> {property.property_name}
         </div>
@@ -24,6 +28,6 @@ export default function PropertyCards({ property }) {
           <FontAwesomeIcon icon="fa-solid fa-user" /> {property.host}
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
