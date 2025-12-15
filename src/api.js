@@ -35,3 +35,4 @@ export const getUserDetails = async (user_id) => {
   } = await axios.get("https://airbnc-60wa.onrender.com/api/users/" + user_id);
   return user;
 };
+
